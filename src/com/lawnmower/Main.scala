@@ -21,8 +21,8 @@ object Main {
         m.move(it.next().trim.toCharArray)
       }
     } catch {
-      case e: MatchError => println(e.getMessage())
-      case e: NumberFormatException => println("Wrong position format")
+      case e: NumberFormatException => println("Wrong coordinates format: " + e.getMessage)
+      case e: MatchError => println("Wrong file format: " + e.getMessage)
       case e: Throwable => println(e.getMessage)
     }
   }
