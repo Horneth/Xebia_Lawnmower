@@ -1,4 +1,10 @@
 Xebia_Lawnmower
 ===============
 
-Reponse au test technique pour Xebia
+Projet [SBT](http://www.scala-sbt.org/) en reponse au test technique pour Xebia
+
+Utilisation:
+
+    git clone https://github.com/Horneth/Xebia_Lawnmower.git
+    sbt test
+    sbt run
