@@ -19,6 +19,7 @@ object Main {
         val position = line.trim.split(' ').init.map(_.toInt).toVector //Create the initial position vector
         val m = Mower(position, grid_size, orientation)
         m.move(it.next().trim.toCharArray)
+        println(m)
       }
     } catch {
       case e: NumberFormatException => println("Wrong coordinates format: " + e.getMessage)

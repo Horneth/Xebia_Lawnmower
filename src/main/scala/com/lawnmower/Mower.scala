@@ -1,6 +1,5 @@
 package com.lawnmower
 
-
 /**
  * Created by thibault on 10/3/14.
  * Mower Class
@@ -24,7 +23,6 @@ case class Mower(var pos: Vector[Int], corner: Vector[Int], var o: Int) {
         if (isInGrid(newPos)) pos = newPos
       case c => throw new MatchError(s"Unknown command: $c")
     }
-    println(this)
   }
 
   //Check that all coordinates are within the grid boundaries
